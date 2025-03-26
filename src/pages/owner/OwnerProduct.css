@@ -1,0 +1,134 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    height: 400px; /* Adjusted height to accommodate inputs and buttons */
+    width: 220px;
+    background: whitesmoke;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px; /* Adjusted height for better fit */
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: gray;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.update-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+}
+
+.add-to-inventory-btn {
+    background-color: burlywood;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-inventory-btn:hover {
+    background-color: orange;
+}
+
+.low-stock {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: darkred;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 150px;
+        height: 300px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .product-image {
+        height: 100px;
+    }
+
+    .product-name {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .update-btn,
+    .add-to-inventory-btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .low-stock {
+        font-size: 14px;
+    }
+}
